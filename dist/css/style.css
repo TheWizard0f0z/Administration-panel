@@ -4362,7 +4362,7 @@ li .dropbtn,
 }
 
 .menu-logo-hamburger .hamburger .menu-ham {
-  width: 25px;
+  width: 30px;
   height: 2px;
   background-color: #ffffff;
   margin: 7px 0;
@@ -4401,6 +4401,18 @@ li .dropbtn,
 
 .menu-subpages ul li a span {
   padding-left: 20px;
+}
+
+.toggled .menu-subpages-title,
+.toggled .menu-logo,
+.toggled .users-title,
+.toggled .user-name {
+  display: none;
+}
+
+.toggled .users-photo {
+  margin-left: -13px;
+  transition: all 0.5s;
 }
 
 /* USERS */
@@ -4509,6 +4521,10 @@ li .dropbtn,
   width: 1px;
   height: 30px;
   background-color: #e3e3e3;
+}
+
+.bootstrap-datetimepicker-widget {
+  display: none;
 }
 
 .picker-open {
@@ -4647,8 +4663,13 @@ div:not(.links-table-inner) + .links-table-inner {
   width: 100%;
 }
 
+.toggled .general {
+  margin: 78px 0 0 60px;
+}
+
 .general {
   margin: 78px 0 0 250px;
+  transition: all 0.5s;
 }
 
 /* title */
