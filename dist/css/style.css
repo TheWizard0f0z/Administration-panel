@@ -4367,12 +4367,18 @@ template {
 }
 
 .sidebar {
-  height: 100%;
+  height: 100vh;
   width: 250px;
   background-color: #191919;
   color: #ffffff;
   position: fixed;
   z-index: 2;
+  transition: all 0.5s;
+}
+
+.sidebar.toggled {
+  width: 60px;
+  transition: all 0.5s;
 }
 
 /* MENU */
@@ -4512,8 +4518,11 @@ template {
 }
 
 @media (max-width: 576px) {
-  #wrapper #sidebar-wrapper {
+  .main .sidebar {
     width: 100vw;
+  }
+  .main .sidebar.toggled {
+    width: 60px;
   }
 }
 
@@ -4761,18 +4770,17 @@ div:not(.links-table-inner) + .links-table-inner {
   width: 100%;
 }
 
-.toggled .general {
-  margin: 78px 0 0 60px;
-}
-
 .general {
   margin: 78px 0 0 250px;
   transition: all 0.5s;
 }
 
+.general.wide {
+  margin: 78px 0 0 60px;
+}
+
 @media (max-width: 768px) {
-  .general,
-  .toggled .general {
+  .general {
     margin-top: 60px;
   }
 }
