@@ -4318,14 +4318,11 @@ template {
 
 @media (max-width: 768px) {
   .topbar ul li a {
-    padding-left: 6px;
-    padding-right: 6px;
     padding-bottom: 0;
     padding-top: 0;
   }
   .notification .dot {
-    top: 9px;
-    right: 5px;
+    top: 10px;
     height: 7px;
     width: 7px;
   }
@@ -4347,6 +4344,25 @@ template {
   }
   .icon-profile:before {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .profile-name {
+    display: none;
+  }
+  .icon-profile:before {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .topbar ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .notification .dot {
+    right: 10px;
   }
 }
 
@@ -4493,6 +4509,22 @@ template {
   top: 50%;
   transform: translateY(-50%);
   padding-left: 10px;
+}
+
+@media (max-width: 576px) {
+  #wrapper #sidebar-wrapper {
+    width: 100vw;
+  }
+}
+
+@media (max-height: 576px) {
+  .sidebar .menu .menu-subpages ul {
+    line-height: 20px;
+    margin-top: 0;
+  }
+  .sidebar .users .users-title {
+    display: none;
+  }
 }
 
 .general-statistic {
@@ -4704,6 +4736,13 @@ div:not(.links-table-inner) + .links-table-inner {
   }
   .general-links .links .links-inner .links-table-inner .col-1:nth-of-type(3) {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .general-links .links .links-inner .links-table-inner .icon-links,
+  .general-links .links .links-inner .links-table-inner .icon-trash {
+    opacity: 1;
   }
 }
 
