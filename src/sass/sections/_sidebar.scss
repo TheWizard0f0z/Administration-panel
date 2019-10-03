@@ -81,6 +81,12 @@
   }
 }
 
+.sidebar .menu .menu-subpages ul li .menu-link.active {
+  color: $color-light;
+  background-color: $color-background-sidebar-beta;
+  border-left: 4px solid $color-graph-alpha;
+}
+
 .menu-subpages [class*="icon-"] {
   vertical-align: middle;
 }
@@ -155,6 +161,7 @@
   .main .sidebar {
     width: 100vw;
   }
+
   .main .sidebar.toggled {
     width: 60px;
   }

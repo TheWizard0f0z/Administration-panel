@@ -4448,6 +4448,12 @@ template {
   padding-left: 20px;
 }
 
+.sidebar .menu .menu-subpages ul li .menu-link.active {
+  color: #ffffff;
+  background-color: #282828;
+  border-left: 4px solid #f58220;
+}
+
 .menu-subpages [class*="icon-"] {
   vertical-align: middle;
 }
