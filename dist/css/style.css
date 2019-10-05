@@ -4186,23 +4186,27 @@ body {
 
 /* date */
 .general-statistic .date,
-.details-statistic .date {
+.details-statistic .date,
+.payout-history {
   border-bottom: 1px solid #e3e3e3;
 }
 
 .general-statistic .date .row,
-.details-statistic .date .row {
+.details-statistic .date .row,
+.payout-history .row {
   -ms-flex-pack: center;
       justify-content: center;
 }
 
 .general-statistic .date .row .col-md-1,
-.details-statistic .date .row .col-md-1 {
+.details-statistic .date .row .col-md-1,
+.payout-history .row .col-md-1 {
   width: auto;
 }
 
 .general-statistic .date .row .form-group,
-.details-statistic .date .row .form-group {
+.details-statistic .date .row .form-group,
+.payout-history .row .form-group {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -4210,7 +4214,9 @@ body {
 .general-statistic .date .row .form-group .startDate,
 .general-statistic .date .row .form-group .endDate,
 .details-statistic .date .row .form-group .startDate,
-.details-statistic .date .row .form-group .endDate {
+.details-statistic .date .row .form-group .endDate,
+.payout-history .date .row .form-group .startDate,
+.payout-history .date .row .form-group .endDate {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid #e3e3e3;
@@ -4220,14 +4226,16 @@ body {
 }
 
 .general-statistic .date .row .form-group input,
-.details-statistic .date .row .form-group input {
+.details-statistic .date .row .form-group input,
+.payout-history .date .row .form-group input {
   border: none;
   padding: 11px 0 10px 10px;
   width: 100px;
 }
 
 .general-statistic .date .row .form-group .icon-calendar,
-.details-statistic .date .row .form-group .icon-calendar {
+.details-statistic .date .row .form-group .icon-calendar,
+.payout-history .date .row .form-group .icon-calendar {
   padding: 10px 10px 10px 0;
   float: right;
 }
@@ -4348,6 +4356,10 @@ body {
 .details-table .details-data td {
   border-bottom: 1px solid #e3e3e3;
   padding-left: 10px;
+}
+
+.sorter:hover {
+  background-color: #f0f0f0;
 }
 
 @media (max-width: 1200px) {
@@ -5008,6 +5020,11 @@ div:not(.links-table-inner) + .links-table-inner {
     margin-top: 0;
     width: 451px;
   }
+}
+
+.payout-history {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Pages / Views */
