@@ -4398,7 +4398,6 @@ body {
 .personal-input {
   font-size: 16px;
   line-height: 42px;
-  width: 250px;
   height: 40px;
   margin: 30px 15px;
   border: 1px solid #e3e3e3;
@@ -4406,6 +4405,7 @@ body {
 }
 
 #login_name {
+  width: 250px;
   padding-left: 40px;
   background-image: url(/images/icons/login.svg);
   background-position: 10px center;
@@ -4414,11 +4414,21 @@ body {
 }
 
 #password {
+  width: 250px;
   padding-left: 45px;
   background-image: url(/images/icons/password.svg);
   background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 24px;
+}
+
+#send_message {
+  width: 500px;
+  padding-left: 40px;
+  background-image: url(/images/icons/message.svg);
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 17px;
 }
 
 .table {
@@ -4830,6 +4840,7 @@ body {
 
 .sidebar .users .users-photo img {
   padding-left: 5px;
+  height: 45px;
 }
 
 .sidebar .users .users-photo a {
@@ -5116,6 +5127,53 @@ div:not(.links-table-inner) + .links-table-inner {
 .payout-history {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-avatar {
+  border-bottom: 1px solid #e3e3e3;
+  text-align: left;
+  padding: 15px;
+}
+
+.chat-avatar .user-status {
+  padding-left: 18px;
+  padding-top: 10px;
+}
+
+.chat-avatar .user-status .user-name {
+  font-size: 28px;
+}
+
+.chat-message {
+  text-align: left;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 100px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chat-message .message-1 {
+  background-color: #f0f0f0;
+  margin: 15px;
+  border-radius: 3px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.chat-message .message-2 {
+  color: #ffffff;
+  background-color: #9c9c9c;
+  margin: 15px;
+  border-radius: 3px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.chat-message .message-their,
+.chat-message .message-me {
+  padding: 10px;
 }
 
 /* Pages / Views */
