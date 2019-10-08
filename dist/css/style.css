@@ -5091,12 +5091,13 @@ body {
   padding-left: 10px;
 }
 
+/*
 @media (max-width: 576px) {
   .sidebar {
     width: 100vw;
   }
 }
-
+*/
 @media (max-height: 576px) {
   .sidebar .menu .menu-subpages ul {
     line-height: 20px;
@@ -5239,18 +5240,22 @@ div:not(.links-table-inner) + .links-table-inner {
       justify-content: center;
 }
 
-.general-statistic .chart .row .col-md-10 {
+.general-statistic .chart .row .col-md-10,
+.general-statistic .chart .row .col-md-9 {
   margin-top: 35px;
   margin-bottom: 35px;
 }
 
 .general-statistic .chart .row .col-md-10 .first-column,
-.general-statistic .chart .row .col-md-10 .second-column {
+.general-statistic .chart .row .col-md-10 .second-column,
+.general-statistic .chart .row .col-md-9 .first-column,
+.general-statistic .chart .row .col-md-9 .second-column {
   -ms-flex-pack: center;
       justify-content: center;
 }
 
-.general-statistic .chart .row .col-md-10 .table-inner {
+.general-statistic .chart .row .col-md-10 .table-inner,
+.general-statistic .chart .row .col-md-9 .table-inner {
   margin: auto;
   height: 42px;
   font-size: 16px;
@@ -5262,24 +5267,28 @@ div:not(.links-table-inner) + .links-table-inner {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.general-statistic .chart .row .col-md-10 .table-inner span {
+.general-statistic .chart .row .col-md-10 .table-inner span,
+.general-statistic .chart .row .col-md-9 .table-inner span {
   float: right;
   font-weight: 300;
   color: #333333;
 }
 
-.general-statistic .chart .row .col-md-10 .chart-graph {
+.general-statistic .chart .row .col-md-10 .chart-graph,
+.general-statistic .chart .row .col-md-9 .chart-graph {
   margin: 35px auto;
   position: relative;
 }
 
-.general-statistic .chart .row .col-md-10 .chart-graph img {
+.general-statistic .chart .row .col-md-10 .chart-graph img,
+.general-statistic .chart .row .col-md-9 .chart-graph img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
 
-.general-statistic .chart .row .col-md-10 .header {
+.general-statistic .chart .row .col-md-10 .header,
+.general-statistic .chart .row .col-md-9 .header {
   border-bottom: none;
   margin-top: 35px;
 }
