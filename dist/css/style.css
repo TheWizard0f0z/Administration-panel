@@ -5091,13 +5091,12 @@ body {
   padding-left: 10px;
 }
 
-/*
 @media (max-width: 576px) {
   .sidebar {
     width: 100vw;
   }
 }
-*/
+
 @media (max-height: 576px) {
   .sidebar .menu .menu-subpages ul {
     line-height: 20px;
