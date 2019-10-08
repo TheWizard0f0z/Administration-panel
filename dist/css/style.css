@@ -4352,7 +4352,6 @@ body {
 }
 
 .header {
-  height: 46px;
   border-bottom: 1px solid #e3e3e3;
 }
 
@@ -4465,19 +4464,69 @@ body {
 
 #modal_login .icon-close,
 #modal_chat .icon-close,
-#modal_addurl .icon-close {
+#modal_addurl .icon-close,
+#modal_addbanner .icon-close {
   cursor: pointer;
   vertical-align: middle;
   float: right;
 }
 
-#modal_addurl {
+#modal_addurl,
+#modal_addbanner {
   width: 100%;
 }
 
 #modal_addurl .main-checkbox {
   height: auto;
   overflow: auto;
+}
+
+#modal_addbanner .main-checkbox {
+  height: 320px;
+}
+
+@media (max-width: 768px) {
+  #modal_chat {
+    width: 100%;
+  }
+  #modal_chat h2 {
+    padding-left: 0;
+    font-size: 10px;
+  }
+  #modal_chat .chat-avatar .userpic {
+    height: 55px;
+    width: 55px;
+  }
+  #modal_chat .chat-avatar .user-status {
+    padding-top: 0;
+  }
+  #modal_chat .message-1,
+  #modal_chat .message-2 {
+    margin-left: 0;
+  }
+  #modal_chat .message-1 p.message-their,
+  #modal_chat .message-1 p.message-me,
+  #modal_chat .message-2 p.message-their,
+  #modal_chat .message-2 p.message-me {
+    max-width: 240px;
+  }
+  #modal_chat .main-input,
+  #modal_chat .btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #modal_quit h2 {
+    font-size: 14px;
+  }
+  #modal_quit .btn-modal {
+    margin: 15px auto;
+  }
+  #modal_addurl .btn-modal,
+  #modal_addbanner .btn-modal {
+    margin: 15px auto;
+  }
 }
 
 .pagination {
@@ -4605,7 +4654,7 @@ body {
   transition: all 0.5s;
 }
 
-#addurl-select {
+#add-select {
   color: #a6a6a6;
 }
 
@@ -5125,6 +5174,14 @@ div:not(.links-table-inner) + .links-table-inner {
   color: #f58220;
 }
 
+@media (max-width: 480px) {
+  .general-links .links .links-inner .links-table-inner a,
+  .links-links .links .links-inner .links-table-inner a,
+  .banners-links .links .links-inner .links-table-inner a {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 768px) {
   .general-links .links .links-inner .links-table-inner,
   .links-links .links .links-inner .links-table-inner,
@@ -5443,33 +5500,57 @@ div:not(.links-table-inner) + .links-table-inner {
   padding: 10px;
 }
 
-.addurl-inputs {
+.add-inputs {
   padding-bottom: 36px;
   border-bottom: 1px solid #e3e3e3;
 }
 
-.addurl-info {
+.add-info {
   padding-left: 15px;
 }
 
-.addurl-checkbox {
+.add-title {
+  margin-top: 32px;
+  color: #999999;
+}
+
+.add-checkbox {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.addurl-generation #generated_link {
+.add-checkbox .checkbox-container {
+  margin: 0;
+}
+
+.add-checkbox .checkbox-container .icon-show {
+  float: right;
+  color: #56819f;
+  display: none;
+  margin-right: 15px;
+}
+
+.add-checkbox .checkbox-container .icon-show:hover {
+  color: #f58220;
+}
+
+.add-checkbox .checkbox-container:hover .icon-show {
+  display: inline-block;
+}
+
+.add-generation #generated_link {
   margin-top: 30px;
 }
 
-.addurl-generation .addurl-buttons {
+.add-generation .add-buttons {
   -ms-flex-pack: end;
       justify-content: flex-end;
 }
 
-.addurl-generation .addurl-buttons .btn {
+.add-generation .add-buttons .btn {
   margin-bottom: 0;
 }
 
-.addurl-generation .addurl-buttons .btn .icon-links {
+.add-generation .add-buttons .btn .icon-links {
   margin-right: 10px;
   vertical-align: middle;
 }
