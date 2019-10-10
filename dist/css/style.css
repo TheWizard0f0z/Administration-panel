@@ -4290,67 +4290,6 @@ body {
       justify-content: center;
 }
 
-.general-statistic .date .row .col-md-1,
-.details-statistic .date .row .col-md-1,
-.payout-history .row .col-md-1 {
-  width: auto;
-}
-
-.general-statistic .date .row .form-group,
-.details-statistic .date .row .form-group,
-.payout-history .row .form-group {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.general-statistic .date .row .form-group .startDate,
-.general-statistic .date .row .form-group .endDate,
-.details-statistic .date .row .form-group .startDate,
-.details-statistic .date .row .form-group .endDate,
-.payout-history .date .row .form-group .startDate,
-.payout-history .date .row .form-group .endDate {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #e3e3e3;
-  border-radius: 3px;
-  color: #9c9c9c;
-  width: 203px;
-}
-
-.general-statistic .date .row .form-group input,
-.details-statistic .date .row .form-group input,
-.payout-history .date .row .form-group input {
-  border: none;
-  padding: 11px 0 10px 10px;
-  width: 100px;
-}
-
-.general-statistic .date .row .form-group .icon-calendar,
-.details-statistic .date .row .form-group .icon-calendar,
-.payout-history .date .row .form-group .icon-calendar {
-  padding: 10px 10px 10px 0;
-  float: right;
-}
-
-/* date - datepicker style */
-.bootstrap-datetimepicker-widget {
-  display: none;
-}
-
-.picker-open {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .date .row .col-md-5 .form-group .startDate,
-  .date .row .col-md-5 .form-group .endDate,
-  .date .row .col-md-1 .btn-one {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
 .header {
   border-bottom: 1px solid #e3e3e3;
 }
@@ -4413,6 +4352,17 @@ body {
   width: 100%;
   padding-left: 10px;
   font-size: 14px;
+}
+
+#daterange {
+  height: 40px;
+  margin: 30px;
+  padding-left: 30px;
+  padding-right: 60px;
+  background-image: url(/images/icons/calendar.svg);
+  background-position: 250px center;
+  background-repeat: no-repeat;
+  background-size: 17px;
 }
 
 .overlay {
