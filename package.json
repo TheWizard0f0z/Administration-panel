@@ -24,6 +24,11 @@
     "build:docs:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" docs",
     "build:docs:sass": "node-sass --output-style compact -o docs/css src/sass",
     "build:docs:autoprefixer": "globstar autoprefixer-cli \"docs/css/*.css\"",
+    "build:docs:minify": "npm-run-all build:minify:* build:tinypng test",
+    "build:minify:html": "minify dist/index.html > docs/index.html",
+    "build:minify:css": "minify dist/css/style.css > docs/css/style.css",
+    "build:minify:js": "minify dist/js/script.js > docs/js/script.js",
+    "build:tinypng": "tinypng docs/images",
     "watch": "npm-run-all build build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server dist --files \"dist/**/*\"",
     "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
@@ -46,6 +51,7 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^5.2.0",
     "stylelint": "^9.10.1",
-    "stylelint-scss": "^3.5.4"
+    "stylelint-scss": "^3.5.4",
+    "tinypng-cli": "0.0.7"
   }
 }
