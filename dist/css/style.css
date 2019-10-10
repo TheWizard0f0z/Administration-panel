@@ -4365,6 +4365,14 @@ body {
   background-size: 17px;
 }
 
+@media (max-width: 480px) {
+  #daterange {
+    background-image: none;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;
